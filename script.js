@@ -5,8 +5,9 @@ function carregar() {
     var hora = data.getHours()
     var min = data.getMinutes()
     var seg = data.getSeconds()
+    var titulo = window.document.getElementById('titulo')
 
-
+    titulo.innerHTML = `Hora do Dia | ${hora}:${min}:${seg}`
     msg.innerHTML = `Agora são ${hora} horas, ${min} minutos e ${seg} segundos.`
     
     if (hora >= 4 && hora < 12){
